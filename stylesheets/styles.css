@@ -1,0 +1,436 @@
+/** Html/Body/universal font **/
+html {
+	background-color: #FAF2F0;
+	scroll-behavior: smooth;
+}
+
+html#main {
+	height: 100vh;
+	background-color: #FAF2F0;
+	width: 100%;
+}
+
+body {
+	margin: 0;
+	font-family: 'IBM Plex Mono', monospace;
+	height: 100%;
+	width: 100%;
+}
+
+h1, h2, h3 {
+	font-family: 'DM Serif Display', serif;
+}
+
+h4 {
+	font-family: 'IBM Plex Mono', monospace;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+/** Navbar **/
+
+#navbar {
+	height: 125px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	box-sizing: border-box;
+	padding: 0 50px;
+	transition: background-color 0.5s ease;
+	z-index: 1;
+	min-width: 1030px;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	background-color: rgba(250, 242, 240, 0.7);
+}
+
+.left-nav h1 {
+	font-size: 46px;
+	cursor: pointer;
+}
+
+.left-nav span {
+	color: #FB3C00;
+}
+
+.company-logos {
+	vertical-align: middle;
+}
+
+.inline {
+	display: inline-block;
+}
+
+.right-nav {
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.right-nav ul li {
+	display: inline-block; 
+}
+
+a, a:visited {
+	font-family: 'IBM Plex Mono', monospace;
+	text-decoration: none;
+	color: black;
+}
+
+a.nav-links:hover, a.nav-links:active {
+	color: #FB3C00;
+	font-weight: bold;
+}
+
+a.nav-links {
+ 	margin-left: 40px;	
+}
+
+/** Intro Page**/
+
+main.index-main-wrapper {
+  border: solid #CFAAC3;
+  border-width: 120px 80px;
+  min-width: 1300px;
+  min-height: 980px;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	box-sizing: border-box;
+  position: relative;
+  
+}
+
+.intro-wrapper {
+	height: calc(100% - 345px);
+	display: flex;
+	align-items: center;
+	position: relative;
+	top: 125px;
+}
+
+main h1 {
+	font-size: 128px;
+  color: #3D3D3D;
+}
+
+.my-intro, .portrait {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.my-intro {
+	height: 100%;
+  text-align: center;
+}
+
+.my-intro p {
+	line-height: 27px;
+  margin-left: auto;
+  margin-right: auto;
+	margin-top: -122px;
+	font-family: 'DM Serif Display', sans-serif;
+  color: #6C6C6C;
+	font-size: 20px;
+}
+
+.hovered {
+	display: none;
+}
+
+span.portrait-icons:hover .unhovered {
+	display: none;
+}
+
+span.portrait-icons:hover .hovered {
+	display: inline;
+}
+
+.view-more-wrapper {
+	position: absolute;
+	bottom: 100px;
+	background-color: rgba(255, 255, 255, 0.3);
+	box-shadow: 4px 4px 4px rgba(0, 0 , 0, 0.25);
+	transition: background-color 0.4s ease;
+}
+
+.view-more-btn {
+	display: inline-block;
+	cursor: pointer;
+	border: 1px solid black;
+	padding: 15px 30px;
+}
+
+.view-more-wrapper:hover {
+	background-color: #D3EFFF;
+}
+
+.view-more-btn span, 
+.view-more-btn img {
+vertical-align: middle;
+}
+
+.view-more-btn span {
+	margin-right: 10px;
+}
+
+/** Sections **/
+
+.home-section {
+  margin: auto;
+}
+
+#about, #experience, #projects {
+	background-color: #FAFAFA;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#experience, #projects {
+	/* margin-top: 280px; */
+  padding-top: 200px;
+}
+
+/** About Me Section **/
+
+#about {
+	padding-top: 200px;
+}
+
+.about-header {
+	background-color: #FFDF47;
+	width: 350px;
+	padding-left: 30px;
+}
+
+.about-header h1 {
+	margin: 0;
+}
+
+#about .content {
+	display: flex;
+	flex-direction: row;
+	line-height: 25px;
+	margin-top: 100px;
+	font-family: 'Inter', sans-serif
+}
+
+.copy {
+	width: 65%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.visual	{
+	width: 60%;
+}
+
+/** Experience Section **/
+
+.exp-header {
+	width: 410px;
+	display: flex;
+	padding-left: 30px;
+	background-color: #D3EFFF;
+	float: right;
+}
+
+.exp-header h1 {
+	margin: 0;
+}
+
+#experience .content {
+	clear: both;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+		flex-direction: column;
+		width: 60%;
+		margin: 0 auto;
+}
+
+.work p {
+	margin-top: -12px;
+	font-size: 15px;
+}
+
+.work ul li {
+	font-family: 'Inter', sans-serif;
+	padding: 5px 0;
+	line-height: 22px;
+}
+
+/** Projects Section **/
+
+.projects-header {
+		width: 350px;
+    background-color: #C6C5FF;
+}
+
+#projects h1 {
+	margin: 0;
+	padding-left: 30px;
+}
+
+#projects .content {
+	position: relative;
+	width: 100%;
+	margin-top: 150px;
+}
+
+.description {
+	width: 350px;
+	background-color: white;
+	box-sizing: border-box;
+	padding: 20px 30px 30px 30px;
+	box-shadow: -6px 7px 4px rgba(75, 132, 218, 0.25);
+	display: flex;
+	flex-direction: column;
+	top: 75px;
+	right: 62px;
+	position: absolute;
+	z-index: 1;
+}
+
+.description h2 {
+	/* font-family: 'IBM Plex Mono', monospace; */
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+}
+
+.description p {
+	font-size: 15px;
+	font-family: 'Inter', sans-serif;
+}
+
+.screenshot {
+	margin-left: 65px;
+	position: relative;
+}
+
+.github-logo {
+	width: 34px;
+}
+
+.rubygems-logo {
+	width: 32px;
+}
+
+.tools-used h5 {
+	margin-bottom: 10px;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.tools-list span {
+	background-color: #D3EFFF;
+	padding: 6px;
+	border-radius: 5px;
+	font-size: 12px;
+}
+
+/** Wanderlust **/
+
+.wanderlust.screenshot {
+	right: -195px;
+}
+
+.wanderlust.screenshot img {
+	width: 715px;
+}
+
+.description.wanderlust {
+	left: 25px;
+	top: 50px;
+	box-shadow: 6px 7px 4px rgba(75, 132, 218, 0.25);
+}
+
+/** Contact Section **/
+
+#contact {
+	background-color: #FFE8E2;
+	margin-top: 200px;
+	padding-top: 15px;
+}
+
+.wave {
+	width: 100%;
+	position: relative;
+}
+
+.contact-header {
+	display: flex;
+	justify-content: center;
+	font-size: 30px;
+	margin: 0;
+}
+
+.contact-header a {
+	font-family: 'DM Serif Display', serif;
+}
+
+.contact-header a:hover {
+	color: #FB3C00;
+}
+
+.contact-info ul {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	list-style-type: none;
+	padding: 0;
+	margin: 10px 0 0 0;
+}
+
+.contact-info ul li {
+	margin-left: 10px;
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+	width: calc(100% + 160px);
+  position: absolute;
+  bottom: -100px;
+  align-items: center;
+}
+
+.icon-unhovered, .icon-hovered {
+  width: 70px;
+}
+
+.icons:hover .icon-unhovered, 
+.icon-hovered {
+  display: none;
+}
+
+.icons:hover .icon-hovered {
+  display: inline;
+}
+
+.icon {
+  left: 40px;
+  bottom: 2px;
+}
+
+.social {
+  right: 40px;
+  bottom: 13px;
+}
+
+.social, .icon { 
+  position: absolute;
+}
+
+.linkedin-logo {
+  width: 34px;
+  margin-right: 5px;
+}
